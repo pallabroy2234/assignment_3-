@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Image Source Change</title>
+  </head>
+  <style>
+    #myImage {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+    }
+  </style>
+  <body>
+    <h1>Image Source Change</h1>
+    <img id="myImage" src="assets/IMG_1.jpg" />
+
+    <button onclick="changeImageSource()">Change Image Source</button>
+
+    <script>
+      function changeImageSource() {
+        let img = document.getElementById("myImage");
+        img.src = "/assets/IMG_2.jpg";
+      }
+    </script>
+  </body>
+</html>
